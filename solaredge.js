@@ -4,7 +4,7 @@ var https = require('https'),
 
 module.exports = function(RED) {
 
-    var API_BASE = "https://monitoringapi.solaredge.com";
+    var API_BASE = "https://monitoringapi.solaredge.com/v2";
 
     function SolarEdgeSite(n) {
         RED.nodes.createNode(this, n);
@@ -28,7 +28,7 @@ module.exports = function(RED) {
             for (var key in options) {
                 query += encodeURIComponent(key) + "=" + encodeURIComponent(options[key]);
             }
-            return API_BASE + "/site/" + node.site.siteid + "/" + command + ".json" + "?" + query;
+            return API_BASE + "/site1/" + node.site.siteid + "/" + command + ".json" + "?" + query;
         }
         
         function fetchData() {
