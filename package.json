@@ -1,5 +1,5 @@
 {
-"name" : "node-red-contrib-solaredge",
+"name" : "node-red-contrib-solaredgeV2",
 "version" : "0.2.0",
 "description" : "Node-RED node to interface with SolarEdge solar photovoltaic inverters",
 "dependencies": {
@@ -22,8 +22,6 @@
   }
 },
 "author": {
-  "name": "michael schmid",
-  "email": "matt@galloway.me.uk",
-  "url": "www.galloway.me.uk"
+  "name": "michael schmid"
 }
 }
